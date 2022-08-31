@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id="demo"></p>
+<p id="demmo1"></p>
+<script>
+hello = function(){
+    return "Rana Awais";
+}
+
+document.getElementById("demo").innerHTML = hello();
+//Arroew Function   
+hay = () => {
+    return "Arrow Function";
+}
+document.getElementById("demmo1").innerHTML = hay();
+//Arrow function with parameters
+arrow = (name) => "Muhammmad" + name;
+document.getElementById("demmo1").innerHTML = arrow(    "awais");
+
+//Arrays 
+const myArray = ['Awais','Shehroz','Irtaza','Shahzain'];
+const myList = myArray.map((List)=><p>{List}</p>);
+ReactDom.render(myList,document.getElementById("root"));
+
+</script>
+
+</body>
+</html>
